@@ -1,6 +1,10 @@
-<?
+<?php
 
-//use app\models\Product;
+use app\engine\Db;
+use app\models\Cart;
+use app\models\Order;
+use app\models\Product;
+use app\models\User;
 
 include "../engine/Autoload.php";
 
@@ -12,9 +16,8 @@ echo $product->getOne(3);
 $user = new User(new Db());
 echo $user->getAll();
 
+$cart = new Cart(new Db());
+echo $cart->getOne(4);
 
-var_dump($product);
-
-function foo(IModel $model) {
-
-}
+$order = new Order(new Db());
+echo $order->getOne(5);

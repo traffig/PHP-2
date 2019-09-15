@@ -1,6 +1,6 @@
 <?php
 
-//namespace app\models;
+namespace app\models;
 
 class Product extends Model
 {
@@ -13,7 +13,5 @@ class Product extends Model
     {
         return 'product';
     }
-
-
 
 }
