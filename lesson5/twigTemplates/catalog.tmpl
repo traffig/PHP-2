@@ -1,7 +1,0 @@
-<h1>"Это Twig!</h1>
-<h2>Каталог</h2>
-{% for product in catalog %}
-    <a href="/?c=product&a=card&id={{ product.id }}">Имя: {{ product.name }}</a>
-    <p>Описание: {{ product.description }}</p>
-    <p>Цена: {{ product.price }}</p>
-{% endfor %}
